@@ -108,15 +108,31 @@ public class durmadanhareket : MonoBehaviour
             menu.SetActive(true);
             exit.SetActive(true);
         }
+ 
+
 
         if (other.gameObject.tag == "zemin")
         {
             karakteryerde = true;
         }
-    
-    
-    
-    
+
+       
+        if (other.gameObject.tag == "positive")
+        {
+            
+            FindObjectOfType<ScoreManager>().AddScore(1000);
+
+           
+        }
+
+     
+        if (other.gameObject.tag == "negative")
+        {
+            
+            Debug.Log("Negative platforma çarptýnýz!");
+        }
+
+
     }
 
 
