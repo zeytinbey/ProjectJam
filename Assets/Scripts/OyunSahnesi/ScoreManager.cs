@@ -79,6 +79,8 @@ public class ScoreManager : MonoBehaviour
 
     private void GameOver()
     {
+
+      
         // Oyun bittiðinde yapýlacaklar
         Debug.Log("Game Over!");
         scoreIncreasing = false;

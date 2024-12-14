@@ -98,6 +98,16 @@ public class durmadanhareket : MonoBehaviour
 
     }
 
+    
+    private void Kill()
+    {
+        Time.timeScale = 0;
+        moveSpeed = moveSpeedStore;
+        speedMilestoneCount = speedMilestoneCountStore;
+        menu.SetActive(true);
+        exit.SetActive(true);
+    }
+    
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "killbox")
