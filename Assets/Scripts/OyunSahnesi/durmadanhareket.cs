@@ -105,7 +105,7 @@ public class durmadanhareket : MonoBehaviour
             Time.timeScale = 0;
             moveSpeed = moveSpeedStore;
             speedMilestoneCount = speedMilestoneCountStore;
-            menu.SetActive(true);
+            menu.SetActive(true);   
             exit.SetActive(true);
         }
  
@@ -128,7 +128,7 @@ public class durmadanhareket : MonoBehaviour
      
         if (other.gameObject.tag == "negative")
         {
-            
+            FindObjectOfType<ScoreManager>().ReduceHealth();
             Debug.Log("Negative platforma çarptýnýz!");
         }
 
